@@ -19,10 +19,11 @@
 
         <form id="addFriendForm" role="form" method="get" action="/add">
             {{#each friends}}
-                <div>
-                    <img src="{{this.imageURL}}" />
+                <div class="friend">
+                    <img class="image-responsive img-rounded" src="{{this.imageURL}}" />
                     <h3>{{this.name}}</h3>
-                    <p>{{this.description}} </p>
+                    <p>{{this.description}}</p>
+                    <hr/>
                 </div>
             {{/each}}
 
